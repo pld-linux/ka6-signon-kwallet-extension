@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	6.13.0
 %define		qtver		6.8
 %define		kaname		signon-kwallet-extension
 Summary:	signon-kwallet-extension
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	9c0e451788be4f5e00d9d5c612527635
+# Source0-md5:	292ea3e4c4e133d57de04c82d6b9b99e
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6Gui-devel >= %{qtver}
@@ -61,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/signon/extensions/libkeyring-kwallet.so
+%{_libdir}/signon/extensions/libkeyring-kwallet.so
