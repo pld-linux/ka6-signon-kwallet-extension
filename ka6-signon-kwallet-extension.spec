@@ -34,6 +34,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 signon-kwallet-extension.
 
+%description -l pl.UTF-8
+Rozszerzenie signon do kwallet.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
